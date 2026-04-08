@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Flingo Roles</title>
+
+<style>
+
+body {
+    background: linear-gradient(135deg,#2b0000,#8b0000,#ff1a4d);
+    color: white;
+    font-family: Arial;
+}
+
+nav {
+    background: black;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: #ff4d79;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* Role Cards */
+
+.role {
+    background: #111;
+    margin: 15px auto;
+    padding: 15px;
+    border-radius: 12px;
+    cursor: pointer;
+    max-width: 700px;
+    border-left: 6px solid #ff1a4d;
+}
+
+.role:hover {
+    background: #222;
+}
+
+.details {
+    display: none;
+    margin-top: 10px;
+    color: lightgray;
+}
+
+.category {
+    text-align: center;
+    color: #ff4d79;
+    margin-top: 30px;
+}
+
+</style>
+
+<script>
+
+function toggle(id){
+
+var x=document.getElementById(id);
+
+if(x.style.display==="none"){
+x.style.display="block";
+}
+else{
+x.style.display="none";
+}
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<nav>
+<a href="./index.html">Home</a>
+<a href="./server.html">Server Info</a>
+<a href="./roles.html">Roles</a>
+<a href="./rules.html">Rules</a>
+</nav>
+
+<h1>🎭 Server Roles</h1>
+
+<!-- HIGH STAFF -->
+
+<h2 class="category">👑 High Staff</h2>
+
+<div class="role" onclick="toggle('r1')">
+🎖️ Executive Director
+<div id="r1" class="details">
+Full server control<br>
+Manages everything<br>
+<b>How to get:</b> Owner only
+</div>
+</div>
+
+<div class="role" onclick="toggle('r2')">
+🛡️ Admins
+<div id="r2" class="details">
+Manage staff & settings<br>
+Handle serious issues<br>
+<b>How to get:</b> Application + promotion
+</div>
+</div>
+
+<!-- STAFF TEAM -->
+
+<h2 class="category">⚙️ Staff Team</h2>
+
+<div class="role" onclick="toggle('r3')">
+🛠️ Senior Moderators
+<div id="r3" class="details">
+Handle reports<br>
+Assist admins<br>
+<b>How to get:</b> Application + promotion
+</div>
+</div>
+
+<div class="role" onclick="toggle('r4')">
+🟩 Moderators
+<div id="r4" class="details">
+Moderate chats<br>
+<b>How to get:</b> Application
+</div>
+</div>
+
+<div class="role" onclick="toggle('r5')">
+🧠 Head Managers
+<div id="r5" class="details">
+Manage teams & events<br>
+<b>How to get:</b> Application + promotion
+</div>
+</div>
+
+<div class="role" onclick="toggle('r6')">
+🧩 Staff Managers
+<div id="r6" class="details">
+Manage staff activity<br>
+<b>How to get:</b> Application + promotion
+</div>
+</div>
+
+<div class="role" onclick="toggle('r7')">
+⭐ Managers
+<div id="r7" class="details">
+Organize server stuff<br>
+<b>How to get:</b> Application
+</div>
+</div>
+
+<div class="role" onclick="toggle('r8')">
+🔱 Staff
+<div id="r8" class="details">
+Basic moderation<br>
+<b>How to get:</b> Application
+</div>
+</div>
+
+<!-- SUPPORT -->
+
+<h2 class="category">🤝 Support Roles</h2>
+
+<div class="role" onclick="toggle('r9')">
+🛠️ Helpers
+<div id="r9" class="details">
+Help members<br>
+<b>How to get:</b> Ticket
+</div>
+</div>
+
+<div class="role" onclick="toggle('r10')">
+💻 Developers
+<div id="r10" class="details">
+Bots & systems<br>
+<b>How to get:</b> Ticket
+</div>
+</div>
+
+<div class="role" onclick="toggle('r11')">
+🎫 Ticket Support
+<div id="r11" class="details">
+Handle tickets<br>
+<b>How to get:</b> Application
+</div>
+</div>
+
+<!-- PREMIUM -->
+
+<h2 class="category">💎 Premium & Special</h2>
+
+<div class="role" onclick="toggle('r12')">
+💎 VIP
+<div id="r12" class="details">
+Basic perks<br>
+<b>How to get:</b> Level 8
+</div>
+</div>
+
+<div class="role" onclick="toggle('r13')">
+💎 VIP Elite
+<div id="r13" class="details">
+More perks<br>
+<b>How to get:</b> Level 13
+</div>
+</div>
+
+<div class="role" onclick="toggle('r14')">
+🎥 Content Creators
+<div id="r14" class="details">
+Promote server<br>
+<b>How to get:</b> Apply / Ticket
+</div>
+</div>
+
+<div class="role" onclick="toggle('r15')">
+🤝 Partner
+<div id="r15" class="details">
+Partner servers<br>
+<b>How to get:</b> Request
+</div>
+</div>
+
+<div class="role" onclick="toggle('r16')">
+💰 Investors
+<div id="r16" class="details">
+Support server<br>
+<b>How to get:</b> Ticket
+</div>
+</div>
+
+<div class="role" onclick="toggle('r17')">
+🚀 Boosters
+<div id="r17" class="details">
+Boost perks<br>
+<b>How to get:</b> Boost server
+</div>
+</div>
+
+<!-- LEVEL ROLES -->
+
+<h2 class="category">🦩 Level Roles</h2>
+
+<div class="role" onclick="toggle('r18')">
+🦩 Flamingo
+<div id="r18" class="details">
+Normal member
+</div>
+</div>
+
+<div class="role" onclick="toggle('r19')">
+✨ Elite Flamingos
+<div id="r19" class="details">
+Mid perks<br>
+<b>How to get:</b> Level 5
+</div>
+</div>
+
+<div class="role" onclick="toggle('r20')">
+⭐ Special
+<div id="r20" class="details">
+Extra perks<br>
+<b>How to get:</b> Level 17
+</div>
+</div>
+
+</body>
+</html>
